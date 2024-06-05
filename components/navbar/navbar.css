@@ -1,0 +1,120 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+
+    
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 20px;
+    /* background-color: red; */
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+
+}
+
+.menu .item{
+    font-size: 17px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.auth-register{
+padding: 7px 16px;
+background-color: green;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+}
+.auth-login{
+padding: 7px 16px;
+border: solid 1px whitesmoke;
+color: black;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.cart-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+    font-size: 22px;
+}
+
+.cart-number{
+position: absolute;
+top: 5px;
+right: 0px;
+font-size: 12px;
+color: white;
+padding: 4px 8px;
+background-color: rgb(214, 73, 12);
+border-radius: 10px;
+}
+
+.avator-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 778px){
+    .menu{
+        display: none;
+
+    }
+.nav{
+    margin: 10px;
+}
+    .only_mobile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .cart-icon{
+        visibility: visible;
+        
+    }
+.cart-number{
+    visibility: visible;
+}
+.avator-image{
+    visibility: visible;
+}
+.link_shop{
+    visibility: visible;
+}
+}
+
+
+@media only screen and (min-width: 778px){
+.only_mobile{
+    display: none;
+}
+}

@@ -1,0 +1,131 @@
+.single{
+display: flex;
+gap: 40px;
+
+}
+
+.single-left{
+    flex: 1;
+    display: flex;
+}
+
+.single-left .image-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.single-left .image-left img{
+width: 100px;
+height: 100px;
+object-fit: contain;
+cursor: pointer;
+
+}  
+
+.single-left .image-main{
+ width: 100%;
+
+}
+
+.single-left .image-main img{
+    
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+
+    }
+.single-right{
+    flex: 1;
+
+}
+
+.container-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+}
+
+.colors{
+    display: flex;
+    align-items: center;
+}
+.colors .sub-color{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+.colors span{
+    font-size: 15px;
+    color: gray;
+}
+
+.items-right{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.addtocart{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.items-right .counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter .counter-item{
+    padding: 4px 8px;
+    background-color: #d1d1d1;
+    font-weight: 300;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 778px){
+    .single-left{
+  flex-direction: column-reverse;
+  margin: 0px 10px;
+    }
+    .single-left .image-left{
+flex-direction: row;
+    }
+    .single-left .image-left img{
+        width: 50px;
+        height: inherit;
+    
+    }
+    .single-left .image-main{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+       }
+       .items-right {
+flex-direction: column;
+    gap: 20px;
+       }
+    .colors{
+        flex-direction: column;
+        display: none;
+    }
+    .single-right{
+        display: flex;
+        /* justify-content: flex-start;
+        align-items: flex-start;
+        background-color: red; */
+    }
+    .single{
+        gap: 10px;
+    }
+    }

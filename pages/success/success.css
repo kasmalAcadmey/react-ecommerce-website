@@ -1,0 +1,36 @@
+.sucess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.sub_sucesss{
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #2DB541;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.title-success{
+    font-size: 54px;
+    font-weight: bold;
+}
+.description_success{
+    font-size: 25px;
+}
+
+.thank-successs{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}

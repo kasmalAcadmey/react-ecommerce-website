@@ -1,0 +1,35 @@
+
+.new{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.newContainer{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10px;
+}
+
+
+
+.new .newText{
+    font-size: 33px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 778px){
+ .newContainer{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0px 20px;
+ }   
+ .products{
+    max-width: 190px;
+ }
+}

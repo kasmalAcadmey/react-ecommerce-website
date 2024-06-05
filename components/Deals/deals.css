@@ -1,0 +1,50 @@
+.deals-contianer{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 50px;
+    gap: 20px;
+}
+
+.delivery{
+    background-color: whitesmoke;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+}
+
+.delivery div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: rgb(35, 35, 35);
+    font-weight: 200;
+}
+
+
+.delivery-text{
+    font-size: 20px;
+    color: rgb(35, 35, 35);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.delivery p{
+    color: gray;
+    font-size: 14px;
+
+}
+
+.free{
+    color: green;
+}
+
+
+@media only screen and (max-width: 778px){
+    .deals-contianer{
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 0px;
+        
+    }
+}

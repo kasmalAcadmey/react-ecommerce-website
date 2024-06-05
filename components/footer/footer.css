@@ -1,0 +1,121 @@
+.footer{
+    margin-top: 40px;
+}
+
+.top_footer{
+    background-color: #F8F7F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.new_left{
+    flex: 1;
+}
+.new_title{
+    font-size: 38px;
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+.new_description{
+    font-size: 22px;
+    color: gray;
+}
+
+.new_right{
+    background-color: white;
+ 
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new_right input{
+    width: 100%;
+margin-left: 10px;
+    outline: none;
+    background-color: inherit;
+  border: none;
+}
+
+.new_right .sub{
+    background-color: green;
+    padding: 14px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bottom_footer{
+    display: flex;
+
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.contect_bottom{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contect_bottom .item_bottom{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.item_bottom span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.item_bottom p{
+    font-size: 16px;
+    color: gray;
+}
+
+.footer h3{
+    font-size: 22px;
+}
+
+.about_bottom{
+    flex: 1;
+
+}
+
+.about_bottom h3{
+    margin-bottom: 10px;
+}
+.about_bottom ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+    
+}
+
+.about_bottom li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.install_app p{
+font-size: 15px;
+margin-top: 10px;
+}
+
+@media only screen and (max-width: 778px){
+    .bottom_footer{
+        flex-wrap: wrap;
+    }
+    .top_footer{
+        flex-direction: column;
+    }
+    .new_right{
+      width: 100%;
+      margin: 20px 0px;
+    }
+}
